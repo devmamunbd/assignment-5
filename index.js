@@ -78,19 +78,19 @@ nextBtn.addEventListener('click', function () {
 
 
 
-// function totalPrice(id, value){
-//   const totalPrice =  document.getElementById(id).innerText;
-//   const totalPriceConvert = parseInt(totalPrice);
-//   const sum = totalPriceConvert + parseInt(value);
-//   setInnerText('total-price', sum)
-// }
+function totalPrice(id, value){
+  const totalPrice =  document.getElementById(id).innerText;
+  const totalPriceConvert = parseInt(totalPrice);
+  const sum = totalPriceConvert + parseInt(value);
+  setInnerText('total-price', sum)
+}
 
-// function grandTotal(id, value){
-//     const grandTotal =  document.getElementById(id).innerText;
-//     const grandTotalConvert = parseInt(grandTotal);
-//     const sum = grandTotalConvert + parseInt(value);
-//     setInnerText('grand-total', sum)
-//   }
+function grandTotal(id, value){
+    const grandTotal =  document.getElementById(id).innerText;
+    const grandTotalConvert = parseInt(grandTotal);
+    const sum = grandTotalConvert + parseInt(value);
+    setInnerText('grand-total', sum)
+  }
 
 function setInnerText(id, value) {
     document.getElementById(id).innerText = value;
