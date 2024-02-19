@@ -48,7 +48,6 @@ for(const seat of seatList) {
 const btn = document.getElementById('apply-btn');
 
 btn.addEventListener('click', function () {
-  
   const couponCode = document.getElementById('input-field').value;
   const couponCodeText = couponCode.split(" ").join("").toUpperCase();
   // console.log(couponCodeText)
