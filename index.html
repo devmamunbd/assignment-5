@@ -57,7 +57,7 @@
               you! Get the lowest prices, <br />and renowned bus operators - all
               in one place.
             </p>
-            <a href="" 
+            <a href="paribahan" 
               class="bg-[#1DD100] px-4 py-2 text-black font-semibold rounded-md"
             >
               Buy Ticket
@@ -108,7 +108,7 @@
           </a>
         </div>
 
-        <section id="paribahan" class="mt-20 mb-20">
+        <section id="paribahan" class="mt-20 mb-20 relative >
           <h1 class="text-center text-2xl text-black font-bold mb-5">
             P.H Paribahan
           </h1>
@@ -127,12 +127,15 @@
                   <br />
                   Coach-009-WEB !AC_Business</a
                 >
+               <h2 class="text-green-500 bg-green-200 px-4 py-2 rounded-md border-green-100"> 
                 <a
-                  href=""
-                  class="text-green-500 bg-green-200 px-4 py-2 rounded-md border-green-100"
-                  ><i class="fa-solid fa-chair"></i
-                  ><span id="seat-left" class="text-black"> 8 seat left</span></a
+                href=""
+                class=""
                 >
+                <i class="fa-solid fa-chair"></i
+                ><span id="seat-left" class="text-black"> 8</span></a>
+                seat left
+               </h2>
               </div>
 
               <div class="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
@@ -193,18 +196,18 @@
               <div class="flex gap-5 flex-col justify-between mt-5">
                 <div class="flex gap-6">
                   <button>A</button>
-                  <button class="bg-[#F7F8F8] px-5 py-2 seats">A1</button>
-                  <button class="bg-[#F7F8F8] px-5 py-2 seats">A2</button>
-                  <button class="bg-[#F7F8F8] px-5 py-2 seats">A3</button>
-                  <button class="bg-[#F7F8F8] px-5 py-2 seats">A4</button>
+                  <button class="bg-[#F7F8F8] px-5 py-2 seats seats-name">A1</button>
+                  <button class="bg-[#F7F8F8] px-5 py-2 seats seats-name">A2</button>
+                  <button class="bg-[#F7F8F8] px-5 py-2 seats seats-a3">A3</button>
+                  <button class="bg-[#F7F8F8] px-5 py-2 seats seats-a4">A4</button>
                 </div>
 
                 <div class="flex gap-6">
                   <button>B</button>
-                  <button class="bg-[#F7F8F8] px-5 py-2 seats">B1</button>
-                  <button class="bg-[#F7F8F8] px-5 py-2 seats">B2</button>
-                  <button class="bg-[#F7F8F8] px-5 py-2 seats">B3</button>
-                  <button class="bg-[#F7F8F8] px-5 py-2 seats">B4</button>
+                  <button class="bg-[#F7F8F8] px-5 py-2 seats seats-name">B1</button>
+                  <button class="bg-[#F7F8F8] px-5 py-2 seats seats-name">B2</button>
+                  <button class="bg-[#F7F8F8] px-5 py-2 seats seats-name">B3</button>
+                  <button class="bg-[#F7F8F8] px-5 py-2 seats seats-name">B4</button>
                 </div>
 
                 <!-- <div class="flex gap-6">
@@ -295,37 +298,42 @@
                 <h1 class="mb-5 text-2xl font-semibold ">Select Your Seat</h1>
 
                 <div class="flex gap-5 mb-3">
-                    <h1 class="seat-count">Seat<span id="seat-increase"> 0</span></h1>
+                    <h1 class="seat-count">Seat <span class="bg-[#1DD100] text-white px-2" id="seat-increase"> 0</span></h1>
                     <h1>Class</h1>
                     <h1>Price</h1>
+                 
                 </div>
                 <hr class="border-dashed ">
 
-                <div class="flex gap-5 mb-3">
-                    <h1>C<span>0</span></h1>
-                    <h1>Economy</h1>
-                    <h1>550</h1>
+                <div class="cart flex gap-5 mb-3">
+                    <h1 class="seat-list">C0</h1>
+                    <h1 class="economy">Economy</h1>
+                    <h1 class=""><span id="prices-list" class="price-list">550</span></h1>
                 </div>
                 <hr class="border-dashed ">
 
-                <div class="flex gap-5 mb-3">
-                    <h1>C<span>0</span></h1>
-                    <h1>Economy</h1>
-                    <h1 class="price">550</h1>
+                <div class="cart flex gap-5 mb-3">
+                    <h1 class="seat-list">C0</h1>
+                    <h1 class="economy">Economy</h1>
+                    <h1 ><span class="price-list">550</span></h1> <br>
+                    
+                </div>
+                <div id="seat-container">
+
                 </div>
                 <hr class="border-dashed ">
 
 
                 
-                <div class="flex gap-5 mb-3">
+                <div class="flex gap-5 mb-3 mt-5">
                     <h1>Total Price</h1> 
                     <h1>BDT<span id="total-price">0</span></h1>
                 </div>
 
 
                 <!-- input -->
-                <input class="bg-[#f2f1f1] border-none outline-none py-2 px-2 p-4" type="text" name="" id="" placeholder="Have any coupon?">
-                <button class="text-white py-2 px-4 rounded-md bg-[#1DD100]" id="appply-btn">Apply</button>
+                <input id="input-field" class="bg-[#f2f1f1] border-none outline-none py-2 px-2 p-4" type="text" name="" placeholder="Have any coupon?">
+                <button class="text-white py-2 px-4 rounded-md bg-[#1DD100]" id="apply-btn">Apply</button>
             
                 <div class="flex gap-5 mt-4">
                     <h1>Grand Total</h1> 
@@ -338,17 +346,17 @@
 
                 <div class="flex flex-col mt-5">
                     <label class="mt-2" for="">Passenger Name*</label>
-                <input class="bg-slate-100 p-3 border-none outline-none" type="text" placeholder="enter your name">
+                <input class="bg-slate-100 p-3 border-none outline-none" type="text" placeholder="enter your name" required>
 
                 <label class="mt-2" for="">Phone Number*</label>
-                <input class="bg-slate-100 p-3 border-none outline-none" type="number" placeholder="enter your number">
+                <input class="bg-slate-100 p-3 border-none outline-none" type="number" placeholder="enter your number" required>
 
                 
                 <label class="mt-2" for="">Email ID</label>
-                <input class="bg-slate-100 p-3 border-none outline-none" type="email" placeholder="enter your email">
+                <input class="bg-slate-100 p-3 border-none outline-none" type="email" placeholder="enter your email" required>
                
             
-                    <button class="bg-[#1DD100] text-white py-2 px-4 rounded-md mt-8">Next</button>
+                    <button id="next-btn" class="bg-[#1DD100] text-white py-2 px-4 rounded-md mt-8">Next</button>
 
                     <div class="flex justify-between gap-6">
                         <a href=""><h1 class="underline underline-offset-1">Terms And Condition</h1></a>
@@ -359,15 +367,35 @@
             </div>
           </div>
         </section>
+
+
+
+        <section id="modal" class="hidden absolute -bottom-[250%] right-96 mb-7 mx-auto w-96 h-80 bg-[white] shadow-2xl rounded-2xl px-5">
+          <div class="text-center  mt-5 flex flex-col justify-center items-center space-y-2">
+            <img class="mx-auto" src="./images/success.png" alt="">
+            <h1 class="text-black font-bold">Thank you for Booking Our Bus Seats. <br>
+              We are working hard to find the best service and deals for you.</h1>
+              <p class="text-black">Shortly you will find a confirmation in your email.</p>
+              <button class="bg-[#27AE60] text-white px-10 py-2 rounded-full">Continue</button>
+            </div>
+        </section>
+
+
+
+
       </main>
     </div>
+
+
+
 
 
     <footer class=" p-10 bg-[black] text-neutral-content">
        <div class="flex justify-between mb-6">
         <aside>
             <h1 class="text-2xl text-white font-bold">M-Ticket</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis <br> praesentium eveniet natus fugit </p>
+            <p>The “m.Ticket” app assists you in planning your public transport journey in Vilnius.  <br>You can select the fastest and most convenient route.
+            </p>
           </aside> 
           <nav>
             <h6 class="footer-title">Download Our App</h6> 
@@ -381,7 +409,7 @@
                 <h1>@all rights reversed. P-ticket services limited.2024</h1>
             </div>
             <div class="flex justify-between gap-7">
-                <h1>Terms And Condition</h1>
+                <a href="#https://www.termsfeed.com/blog/sample-terms-and-conditions-template/">Terms And Condition</a>
                 <h1>Returns And Refund Policy</h1>
                 <h1>Privacy Policy</h1>
             </div>
